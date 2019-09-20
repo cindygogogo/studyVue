@@ -1,9 +1,10 @@
 <template>
   <div class="hello">
     <h1>this is hello word</h1>
-    <input placeholder="请输入" v-model="name" v-focus/>
+    <input placeholder="请输入" v-model="name"/>
     <button @click="submit">提交</button>
     <vue-msg ref="msg"/>
+    <!--<vue-btn/>-->
   </div>
 </template>
 
@@ -21,9 +22,9 @@ export default {
       // console.log('11', this.name)
       if (!this.name) {
         this.$refs.msg.msgPlugin('姓名不能为空')
-      } else {
-        this.$refs.msg.msgPlugin('????')
       }
+      // console.log(this.$msg)
+      // this.$myFunc()
     }
   }
 }
