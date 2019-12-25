@@ -6,3 +6,5 @@
 
 - 2.开发一个基本插件 路径src/plugins
 (基本实现、修改引入方式index.js)
+
+- 3.富文本 src/views/richText

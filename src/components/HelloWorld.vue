@@ -4,13 +4,14 @@
     <input placeholder="请输入" v-model="name"/>
     <button @click="submit">提交</button>
     <vue-msg ref="msg"/>
-    <!--<vue-btn/>-->
+    <vue-btn/>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  components: {},
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -19,11 +20,11 @@ export default {
   },
   methods: {
     submit () {
-      // console.log('11', this.name)
+      console.log('11', this.name)
       if (!this.name) {
         this.$refs.msg.msgPlugin('姓名不能为空')
       }
-      // console.log(this.$msg)
+      console.log(this.$msg)
       // this.$myFunc()
     }
   }
